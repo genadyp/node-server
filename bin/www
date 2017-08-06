@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+const app = require('../app');
+const PORT = 3700;
+
+app.socketio.listen(app.listen(PORT));

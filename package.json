@@ -1,0 +1,20 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/www",
+  "scripts": {
+    "test": "echo 'NO TEST'",
+    "start": "node bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.15.3",
+    "got": "^7.1.0",
+    "lodash": "^4.17.4",
+    "pug": "^2.0.0-rc.2",
+    "socket.io": "^2.0.3"
+  }
+}

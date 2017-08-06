@@ -1,0 +1,23 @@
+head
+    title= "Node Test app"
+    script(src='./javascripts/index.js')
+    script(src='/socket.io/socket.io.js')
+    
+    .controls
+    input#root(style='width:350px;')
+    input#crawl(type='button', value='crawl')
+    
+    p
+    .controls
+    input#url(style='width:350px;')
+    input#ref(type='button', value='referenced by')
+    p
+    div
+    table.table.table-hover#ref-table
+      thead
+        tr: th Referenced By
+      tbody
+        each row in JSON.parse(rows)
+          tr
+            td=row.url
+          
