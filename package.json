@@ -5,7 +5,8 @@
   "main": "bin/www",
   "scripts": {
     "test": "echo 'NO TEST'",
-    "start": "node bin/www"
+    "start": "node bin/www",
+    "stop": "node bin/server.stop.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,7 @@
     "got": "^7.1.0",
     "lodash": "^4.17.4",
     "pug": "^2.0.0-rc.2",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.0.3",
+    "socket.io-client": "^2.0.3"
   }
 }

@@ -51,6 +51,10 @@ app.use(function(err, req, res, next) {
 /*------- socket handlers ---------*/
 
 socketio.sockets.on('connection', socket => {
+  socket.on('npmStop', () => {
+    process.exit(0);
+  });
+
   socket.emit('message', {
     message: 'welcome'
   });
